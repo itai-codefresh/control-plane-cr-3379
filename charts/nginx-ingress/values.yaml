@@ -1,0 +1,12 @@
+nginx-ingress:
+  namespace: default
+
+  controller:
+    config:
+      use-proxy-protocol: "true"
+    service:
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: cr-3379.cf-op.com
+        service.beta.kubernetes.io/aws-load-balancer-proxy-protocol: "*"
+      externalTrafficPolicy: Local
+
