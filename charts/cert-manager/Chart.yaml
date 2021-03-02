@@ -1,0 +1,8 @@
+apiVersion: v2
+description: External DNS
+name: external-dns
+version: 0.1.0
+dependencies:
+- name: cert-manager
+  repository: https://charts.jetstack.io/
+  version: 1.0.2
